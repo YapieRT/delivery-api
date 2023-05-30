@@ -1,5 +1,6 @@
 import Meal from '../models/mealModel.js';
-// MealsController.addMeal();
+
+// {MealsController.addMeal();
 
 // const data = new Meal({
 //   name: 'Mushroom Mac and Cheese.',
@@ -14,12 +15,12 @@ import Meal from '../models/mealModel.js';
 //       .catch((error) => {
 //         console.error(error); // Handle the error if the insertion fails
 //       });
-//   };
+//   };}
 
 export const getRestaurantMeals = async (req, res) => {
   try {
     const restaurantId = req.query.id;
-    const meals = await Meal.find({ restaurant: restaurantId }).select('name restaurant');
+    const meals = await Meal.find({ restaurant: restaurantId }).select('name restaurant price');
     if (meals) {
       res.status(200).json({
         message: 'Success',

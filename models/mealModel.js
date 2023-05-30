@@ -9,6 +9,10 @@ const mealSchema = new Schema({
     type: Schema.Types.ObjectId,
     required: true,
   },
+  price: {
+    type: Number,
+    required: true,
+  },
 });
 
 export default model('Meal', mealSchema);
