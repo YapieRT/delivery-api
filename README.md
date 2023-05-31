@@ -16,7 +16,7 @@ To install and run the app you need :
 
 **Database**
 
-    Remote database on mongo`s app:
+Remote database on mongo`s app:
 
 ```
 import mongoose from 'mongoose';
@@ -57,7 +57,3 @@ Don`t forget to start your mongod.service.
 5. To start the server write `node server.js`.
 
 Success.
-
-```
-
-```
