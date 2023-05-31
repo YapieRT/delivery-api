@@ -18,18 +18,18 @@ To install and run the app you need :
 
     Remote database on mongo`s app:
 
-`import mongoose from 'mongoose';
+<code>import mongoose from 'mongoose';
 
 export const connectDB = () => {
 mongoose
 .connect('_Your connection URI here_')
 .then(() => console.log('DB conected'))
 .catch((err) => console.log('DB error', err));
-};`
+};</code>
 
-    Local database:
+Local database:
 
-`import mongoose from 'mongoose';
+<code>iimport mongoose from 'mongoose';
 
 const dbName = 'delivery'; // DB Name
 
@@ -42,8 +42,8 @@ useNewUrlParser: true,
 useUnifiedTopology: true,
 }).then(() => console.log('DB conected'))
 .catch((err) => console.log('DB error', err));
-};`
-};`
+};
+};</code>
 
 Don`t forget to start your mongod.service.
 
@@ -52,3 +52,7 @@ Don`t forget to start your mongod.service.
 5. To start the server write `node server.js`.
 
 Success.
+
+```
+
+```
